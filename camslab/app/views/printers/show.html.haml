@@ -1,0 +1,19 @@
+-# in app/views/movies/show.html.haml
+%h2 Printer #{@printer.printerID} Information
+
+%ul#details
+  %li
+    Reserve Time:
+    = @printer.reserveTime
+  %li
+    Reserve time:
+    = @printer.reserveDate.strftime("%B %d, %Y")
+
+%h3 Student ID:
+
+%p#studentID= @printer.studentID
+
+-# modify last 2 lines of app/views/movies/show.html.haml to:
+= link_to 'Edit info', edit_printer_path(@printer)
+= link_to 'Delete', printer_path(@printer), :method => :delete
+= link_to 'Back to printer list', printers_path

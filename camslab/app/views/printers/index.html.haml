@@ -1,0 +1,22 @@
+= image_tag "/assets/Lewis-University-Logo.png"
+%br
+= link_to 'Add new printer', new_printer_path
+%h1 CAMs Printer Schedule
+%table#printers
+  %thead
+    %tr
+      %th Printer ID
+      %th Student Name
+      %th Reserve Time
+      %th Reserve Date
+  %tbody
+    - @printers.each do |printer|
+      %tr
+        %td= printer.printerID 
+        %td= printer.studentID
+        %td= printer.reserveTime
+        %td= printer.reserveDate
+        %td= link_to "Printer #{printer.printerID} Information", printer_path(printer)
+
+
+%bottomblock

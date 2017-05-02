@@ -1,0 +1,73 @@
+/* CSS styling for CAMS */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: DarkSlateGrey;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 10pt;
+}
+#main {
+  margin: 0;
+  padding: 0 20px 20px;
+}
+a {
+  background: transparent;
+  color: maroon;
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  color: white;
+  background-color: maroon;
+  font-size: 150%;
+  font-style: italic;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid DarkSlateGrey;
+}
+printerID {
+  margin: 0 0 1em;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border-bottom: 4px solid gold;
+  font-size: 2em;
+  font-style: normal;
+}
+#printers {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+#printers th {
+  border: 2px solid white;
+  font-weight: bold;
+  background-color: wheat;
+}
+#printers th, #printers td {
+  padding: 4px;
+  text-align: left;
+}
+#notice, #warning {
+  background: orange;
+  margin: 1em 0;
+  padding: 4px;
+}
+form label {
+  display: block;
+  line-height: 25px;
+  font-weight: bold;
+  color: black;
+}
+/*bottom of the page*/
+bottomblock{
+  display: block;
+  line-height: 25px;
+  font-weight: bold;
+  background-color: grey;
+  height:30vh;
+}

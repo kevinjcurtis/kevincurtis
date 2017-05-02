@@ -1,0 +1,15 @@
+%h2 Create New Printer
+
+= form_tag printers_path, :method => :post do
+
+  = label :printer, :printerID, 'Printer ID'
+  = text_field :printer, :printerID
+
+  = label :printer, :reserveTime, 'Reservation Time'
+  = select :printer, :reserveTime, ['8AM - 9AM','9AM -10AM','10AM-11AM','11AM-12PM','12PM-1PM', '1PM-2PM', '2PM-3PM','3PM-4PM','4PM-5PM']
+ 
+  = label :printer, :reserveDate, 'Reservation Date'
+  = date_select :printer, :reserveDate
+
+  = submit_tag 'Save Changes'
+  = link_to 'Cancel', printers_path
